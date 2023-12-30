@@ -1,0 +1,100 @@
+@import url();
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(./newsletter\ image/illustration-sign-up-desktop.svg);
+    width: 40rem;
+    height: 27rem;
+    margin-top: 7rem;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 19rem 25rem;
+    border-radius: 1.5rem;
+    padding: 3rem;
+}
+
+.newsletter_container {
+    width: 18rem;
+}
+
+.heading_container p {
+    margin-top: 1rem;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.offers {
+    margin-top: 1.5rem;
+}
+.offers .offer1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.offers .offer1 p {
+    margin-left: 1rem;
+}
+
+form {
+    margin-top: 1.5rem;
+}
+
+#email_box {
+    width: 16rem;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    margin-top: 0.5rem;
+    padding: 0rem 0rem 0rem 1rem;
+    border: 1px dotted hsl(231, 7%, 60%);
+    cursor: pointer;
+}
+
+#email_box:active {
+    border-width: 10rem;
+}
+
+#email_box:focus {
+    border: 1px thin hsl(231, 7%, 60%);
+    border: none;
+}
+
+button:active {
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 4px 4px 0 hsl(4, 100%, 67%), 0 4px 20px 0 hsl(4, 100%, 67%);
+}
+
+form button {
+    padding: 0.8rem 3.2rem;
+    border-radius: 0.4rem;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-size: 0.7rem;
+    border: none;
+}
