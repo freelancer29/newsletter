@@ -12,6 +12,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 .container {
@@ -25,6 +26,7 @@ body {
     background-size: 19rem 25rem;
     border-radius: 1.5rem;
     padding: 3rem;
+    /* display: none; */
 }
 
 .newsletter_container {
@@ -98,4 +100,35 @@ form button {
     color: white;
     font-size: 0.7rem;
     border: none;
+}
+
+.success_container {
+    width: 22rem;
+    height: 24rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1.8rem;
+    padding: 2.5rem;
+    position: absolute;
+    margin-top: 7rem;
+    display: none;
+}
+
+.success_container h1 {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    color: hsl(234, 29%, 20%);
+}
+
+.success_container p {
+    margin-top: 1.2rem;
+    font-size: 0.7rem;
+    color: hsl(234, 29%, 20%);
+}
+
+.success_container button {
+    margin-top: 1.8rem;
+    padding: 0.8rem 5rem;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
 }
