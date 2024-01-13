@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="main_container">
         <div class="newsletter_container">
             <div class="heading_container">
                 <h1>Stay updated!</h1>
@@ -17,7 +17,7 @@
             <div class="offers">
                 <div class="offer1">
                     <img src="./newsletter image/icon-success.svg" alt="success_icon" class="icon">
-                    <p>product discoery and building what matters</p>
+                    <p>product discovery and building what matters</p>
                 </div>
                 <div class="offer1">
                     <img src="./newsletter image/icon-success.svg" alt="success_icon" class="icon">
@@ -30,17 +30,20 @@
             </div>
             <form action="#">
                 <h6>Email address</h6>
-                <input type="t
-                ext" placeholder="email@company.com" id="email_box"><br><br>
-                <button>Subcribe to monthly newsletter</button>
+                <input type="email" placeholder="email@company.com" id="email_box" required><br><br>
+                <button id="submit_button">Subcribe to monthly newsletter</button>
             </form>
         </div>
     </div>
-    <div class="success_container">
+    <div class="success_container" id="dismiss_container">
         <img src="./newsletter image/icon-success.svg" alt="success_icon" width="50rem" height="50rem">
             <h1>Thanks for subscribing!</h1>
-            <p>A comfirmation email has been sent to <span></span> please open it and click the button inside to comfirm your subscription </p>
-            <button>Dismiss message</button>
+            <p>A comfirmation email has been sent to <span id="response"></span> please open it and click the button inside to comfirm your subscription </p>
+            <button id="dismiss">Dismiss message</button>
     </div>
+
+    <script src="./main.js">
+
+    </script>
 </body>
 </html>
