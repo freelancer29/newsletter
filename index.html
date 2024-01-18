@@ -12,7 +12,7 @@
         <div class="newsletter_container">
             <div class="heading_container">
                 <h1>Stay updated!</h1>
-                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                <p>Join 60,000+ product managers receiving monthly<br> updates on:</p>
             </div>
             <div class="offers">
                 <div class="offer1">
@@ -28,17 +28,23 @@
                     <p>And much more!</p>
                 </div>
             </div>
+            <!-- user input field -->
             <form action="#">
-                <h6>Email address</h6>
-                <input type="email" placeholder="email@company.com" id="email_box" required><br><br>
+                <div class="email_error">
+                    <h6>Email address</h6>
+                    <span id="error"></span>
+                </div>
+                <input type="email" placeholder="email@company.com" id="email_box"><br><br>
                 <button id="submit_button">Subcribe to monthly newsletter</button>
             </form>
         </div>
+       
     </div>
+    <!-- welcome container field -->
     <div class="success_container" id="dismiss_container">
         <img src="./newsletter image/icon-success.svg" alt="success_icon" width="50rem" height="50rem">
             <h1>Thanks for subscribing!</h1>
-            <p>A comfirmation email has been sent to <span id="response"></span> please open it and click the button inside to comfirm your subscription </p>
+            <p style="color: hsl(231, 7%, 60%);">A comfirmation email has been sent to <span id="response"></span> please open it and click the button inside to comfirm your subscription </p>
             <button id="dismiss">Dismiss message</button>
     </div>
 

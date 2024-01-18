@@ -8,7 +8,7 @@
 
 body {
     background-color: hsl(235, 18%, 26%);
-    font-size: 16px;
+    font-size: 16px;     
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
@@ -17,15 +17,21 @@ body {
 
 .container {
     background-color: hsl(0, 0%, 100%);
-    background-image: url(./newsletter\ image/illustration-sign-up-desktop.svg);
-    width: 40rem;
+    width: 41rem;
     height: 27rem;
     margin-top: 7rem;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 19rem 25rem;
     border-radius: 1.5rem;
     padding: 3rem;
+    background-image: url(./newsletter\ image/illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 19rem 25rem;    
+}
+
+.desktop_image {
+    width: 280px;
+    height: 400px;
+    margin-left: 3rem;
 }
 
 .newsletter_container {
@@ -37,12 +43,14 @@ body {
 }
 
 p {
-    font-size: 0.8rem;
+    font-size: 12px;
+    color: hsl(235, 18%, 26%);
 }
 
 h1 {
     font-size: 2.7rem;
     font-weight: 700;
+    color: hsl(234, 29%, 20%);
 }
 
 .icon {
@@ -53,6 +61,7 @@ h1 {
 .offers {
     margin-top: 1.5rem;
 }
+
 .offers .offer1 {
     display: flex;
     justify-content: left;
@@ -78,18 +87,9 @@ form {
     cursor: pointer;
 }
 
-#email_box:active {
-    border-width: 10rem;
-}
-
 #email_box:focus {
     border: 1px thin hsl(231, 7%, 60%);
     border: none;
-}
-
-button:active {
-    background-color: hsl(4, 100%, 67%);
-    box-shadow: 0 4px 4px 0 hsl(4, 100%, 67%), 0 4px 20px 0 hsl(4, 100%, 67%);
 }
 
 form button {
@@ -132,8 +132,26 @@ form button {
     border-radius: 0.5rem;
 }
 
+.success_container button:hover {
+    background-image: linear-gradient(to bottom right, purple, rgb(235, 67, 7));
+    box-shadow: 0 4px 8px 0 rgba(235, 67, 7), 0 6px 20px 0 rgba(235, 67, 7);
+}
+
 #response {
-    font-weight: bold;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+
+.email_error {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.email_error #error {
+    font-size: 0.7rem;
+    color: red;
+    margin-left: 6rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -141,6 +159,9 @@ form button {
         justify-content: left;
     }
  .container {
+    background-image: url(./newsletter\ image/illustration-sign-up-mobile.svg);
+    background-position: top;
+    background-size: 25rem 18rem;
     width: 23.5rem;
     height: 50rem;
     margin-top: 0;
@@ -148,21 +169,12 @@ form button {
  }
  
  .newsletter_container {
-    margin-top: 12rem;
-    height: 50rem;
- }
-
- .container {
-    background-image: none;
-    padding: 1rem;
- }
-
- .offers {
-    padding: 1.5rem;
-    margin-top: 0.1rem;
+    margin-top: 18rem;
+    margin-left: -1.5rem;
  }
 
  p {
     font-size: 1rem;
  }
+
 }
