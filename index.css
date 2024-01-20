@@ -150,31 +150,81 @@ form button {
 
 .email_error #error {
     font-size: 0.7rem;
-    color: red;
+    color: rgb(199, 179, 179);
     margin-left: 6rem;
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) and (max-width: 740px) {
     body {
         justify-content: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(0, 0%, 100%);
     }
  .container {
     background-image: url(./newsletter\ image/illustration-sign-up-mobile.svg);
     background-position: top;
-    background-size: 25rem 18rem;
-    width: 23.5rem;
+    background-size: 24rem 17.5rem;
+    width: 100%;
     height: 50rem;
     margin-top: 0;
     border-radius: 0;
  }
  
- .newsletter_container {
-    margin-top: 18rem;
-    margin-left: -1.5rem;
+ .email_error {
+    justify-content: space-between;
+ }
+ .email_error #error {
+    color: red;
  }
 
+ .newsletter_container {
+    margin-top: 17rem;
+    margin-left: -1.5rem;
+    width: 100%;
+ }
+
+ h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+ }
  p {
     font-size: 1rem;
  }
+
+ .heading_container {
+    width: 21rem;
+ }
+
+ .offer1 {
+    width: 21rem;
+    padding-right: -2rem;
+ }
+
+ .offer1 p {
+    font-size: 1rem;
+ }
+
+ #email_box {
+    width: 21rem;   
+    height: 3rem;
+ }
+
+ form button {
+    width: 21rem;
+    height: 3.5rem;
+}
+
+.success_container {
+    height: 100%;
+    padding-top: 12rem;
+    margin-left: -1rem;
+    width: 25rem;
+}
+
+.success_container p {
+    font-size: 1rem;
+}
 
 }
